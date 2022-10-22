@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+$color_bg: #fbfbfc;
+$color_white: #ffff;
+$color-main: #1d252e;
+$color-text-weight300: #2a3b45;
+
+.header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 56px;
+        padding: 15px 48px 15px 52px;
+        background-color: $color-main;
+    }
+    &__tell {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        color: $color_white;
+        padding-right: 15px;
+        border-right: 1px solid $color_white;
+    }
+    &__left {
+        display: flex;
+        align-items: center;
+    }
+    &__list {
+        height: 24px;
+        display: flex;
+        gap: 12px;
+        margin-left: 15px;
+        &_link {
+            cursor: pointer;
+            a {
+                margin-bottom: 3px;
+            }
+        }
+    }
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 13px 48px 11px 48px;
+        background-color: $color_white;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    }
+    &__info {
+        &_title {
+            font-weight: 400;
+            font-size: 35px;
+            line-height: 26px;
+            font-family: "Roboto", sans-serif;
+            margin-bottom: 7px;
+        }
+        &_text {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-size: 8px;
+            line-height: 16px;
+            letter-spacing: 1.05em;
+        }
+    }
+    &__searchBtn {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        padding: 6px 30px;
+        border: 1px solid #cd9933;
+        border-radius: 40px;
+        background-color: $color_white;
+        color: $color-main;
+        cursor: pointer;
+        transition: all 0.4s;
+        &_text {
+            margin-top: 3px;
+            font-weight: 700;
+            font-size: 16px;
+        }
+        &:hover {
+            background-color: #cd9933;
+            color: $color_white;
+        }
+        &:focus {
+            padding: 5px 29px;
+            border: 2px solid #cd9933;
+        }
+        &_img {
+            color: #ffff;
+            fill: #ffff;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.dropdown {
+    position: relative;
+    display: flex;
+    &__content {
+        position: absolute;
+        width: 61px;
+        top: -11px;
+        left: -7px;
+        z-index: 2;
+        padding: 3px 7px 0px 7px;
+        background: #1d252e;
+        box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.3);
+    }
+    &__item {
+        padding: 6px 0px 6px 0px;
+        font-weight: 700;
+        line-height: 24px;
+        font-size: 16px;
+        color: #ffffff;
+        border-bottom: 1px solid #016da6;
+        cursor: pointer;
+        &:last-child {
+            border: none;
+        }
+    }
+    &__btn {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        background: #1d252e;
+        cursor: pointer;
+        &_value {
+            font-family: "Montserrat";
+            font-weight: 700;
+            font-size: 16px;
+            color: #ffffff;
+        }
+    }
+}

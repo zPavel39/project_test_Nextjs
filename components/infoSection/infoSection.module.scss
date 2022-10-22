@@ -1,0 +1,19 @@
+.info {
+    &__main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin:0 150px 77px 150px;
+    }
+    &__title {
+        font-weight: 400;
+        font-size: 44px;
+    }
+    &__description {
+        margin: 0 auto;
+        max-width: 946px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
