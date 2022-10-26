@@ -1,19 +1,46 @@
 .info {
+        max-width: 1250px;
+        margin: 0 auto;
+        padding-top: 205px;
+        
     &__main {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin:0 150px 77px 150px;
+        margin: 0 0 77px 0;
     }
     &__title {
         font-weight: 400;
         font-size: 44px;
     }
     &__description {
-        margin: 0 auto;
+        margin: 0 0 0 210px;
         max-width: 946px;
         font-weight: 400;
         font-size: 16px;
         line-height: 22px;
+        padding-bottom: 66PX;
+    }
+    &__form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 28px;
+        width: 263px;
+        margin-right: 50px;
+        border-bottom: 1px solid #2a3b45;
+        &_input {
+            width: 100%;
+            max-width: 232px;
+            background: #fbfbfc;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+        }
+        &_searchImg {
+            margin: 10px;
+            padding: 10px;
+            cursor: pointer;
+        }
     }
 }

@@ -1,0 +1,59 @@
+.tree {
+    flex: 25%;
+    height: 100%;
+    &__filter {
+        &_item {
+            position: relative;
+        }
+        &_btn {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #0084ca;
+            font-family: "Montserrat";
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            background-color: #fbfbfc;
+            margin-bottom: 9px;
+            cursor: pointer;
+            &:focus {
+                text-decoration: underline;
+            }
+        }
+        &_img {
+                transform: rotate(180deg);
+        }
+    }
+    &__list {
+        &_item {
+            position: relative;
+            flex-wrap: wrap ;
+            margin: 0px 0px 9px 8px;
+            width: 200px;
+            padding: 3px 2px 3px 8px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: #1d252e;
+            cursor: pointer;
+            &:hover {
+                background: #f2f2f2;
+                border-top-left-radius: 6px;
+                border-bottom-left-radius: 6px;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0px;
+                    right: -35px;
+                    border: 16px solid transparent;
+                    border-left: 19px solid #f2f2f2;
+                    z-index: 2;
+                }
+            }
+        }
+    }
+}
+.active {
+    display: none;
+}

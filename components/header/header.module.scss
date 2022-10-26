@@ -1,13 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 $color_bg: #fbfbfc;
 $color_white: #ffff;
 $color-main: #1d252e;
 $color-text-weight300: #2a3b45;
 
 .header {
+    position: fixed;
     display: flex;
+    width: 100%;
     flex-direction: column;
-    margin-bottom: 80px;
+    z-index: 2;
     &__top {
         display: flex;
         justify-content: space-between;

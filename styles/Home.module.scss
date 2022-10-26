@@ -1,0 +1,14 @@
+.home {
+    position: relative;
+    height: 100vh;
+    &__main {
+        display: flex;
+        justify-content: center;
+        max-width: 1250px;
+        margin: 0 auto;
+
+    }
+    &__priceList {
+        width: 100%;
+    }
+}
