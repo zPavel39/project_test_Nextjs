@@ -36,7 +36,7 @@ export const PriceTree = ({ list, filterParentTree, setFilterParentTree, setFilt
         }
 
     }
-    
+
     const handleClickChildren = (name) => {
         return setFilterChildrenTree(name)
     }
@@ -52,7 +52,7 @@ export const PriceTree = ({ list, filterParentTree, setFilterParentTree, setFilt
                         </button>
                         {isActive && filterChildTree === item.folder_id && <ul className={styles.tree__list && filter === item.folder_id && styles.active}>
                             {list.filter(x => x.parent == item.folder_id).map(x => (
-                                <li className={styles.tree__list_item} onClick={() => handleClickChildren(x.name)}>{namePrice(x.name)}</li>
+                                <li className={styles.tree__list_item} onClick={() => handleClickChildren(x.name)} key={x.id}>{namePrice(x.name)}</li>
                             ))}
                         </ul>}
                     </li>

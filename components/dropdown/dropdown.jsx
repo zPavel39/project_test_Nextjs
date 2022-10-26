@@ -15,6 +15,7 @@ export const Dropdown = ({ selected, setSelected }) => {
                 <ul className={styles.dropdown__content}>
                     {language.map(language => (
                         <li className={styles.dropdown__item}
+                            key={language}
                             onClick={(e) => {
                                 setSelected(language);
                                 setIsActive(false);

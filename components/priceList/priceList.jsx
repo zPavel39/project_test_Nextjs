@@ -18,7 +18,7 @@ export const PriceList = ({ filterAllPrice, setCountSum, isIdBasket, setIsIdBask
         <div className={styles.price}>
             <ul className={styles.price__list}>
                 {filterAllPrice.map(x => (
-                    <li className={styles.price__item}>
+                    <li className={styles.price__item} key={x.id}>
                         <div className={styles.price__left}>
                             <h2 className={styles.price__left_title}>{namePrice(x.name)}</h2>
                             <a className={styles.price__left_link}>Подробнее<Image src='/price_arrow_right.svg' width={12} height={12} /></a>
@@ -32,12 +32,6 @@ export const PriceList = ({ filterAllPrice, setCountSum, isIdBasket, setIsIdBask
                                     }}
                                 >
                                     <Image src='/basket.svg' width={52} height={52} />
-                                </button>
-                                
-                                <button className={styles.price__right_btnCount}>
-                                    <span>+</span>
-                                    <span>0</span>
-                                    <span>-</span>
                                 </button>
                             </div>
                         </div>
