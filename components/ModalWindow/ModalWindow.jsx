@@ -3,8 +3,11 @@ import { useState } from 'react'
 import { BtnCount } from '../ui/btnCount/btnCount'
 import styles from './ModalWindow.module.scss'
 
+
 export const ModalWindow = ({ isIdBasket, count }) => {
+
     const [isActive, setIsActive] = useState(false)
+
     return (
         <div className={isActive ? styles.modal__btnActive : styles.modal}>
             <h2 className={styles.modal__title}>Корзина</h2>

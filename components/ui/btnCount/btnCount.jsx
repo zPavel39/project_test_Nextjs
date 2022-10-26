@@ -6,7 +6,7 @@ export const BtnCount = ({ count }) => {
     return (
         <div className={styles.btnCount}>
             <button className={styles.btnCount__btn}>
-                <Image src='/minus.svg' width={12} height={12}/>
+                <Image src='/minus.svg' width={12} height={12} />
             </button>
             <span className={styles.btnCount__count}>{count}</span>
             <button className={styles.btnCount__btn}>

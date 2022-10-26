@@ -2,7 +2,9 @@ import Image from 'next/image'
 import { useState } from 'react'
 import styles from './priceList.module.scss'
 
+
 export const PriceList = ({ filterAllPrice, setCountSum, isIdBasket, setIsIdBasket }) => {
+
     const [isActive, setIsActive] = useState(true)
     const namePrice = (str) => {
         return decodeURI(str).substring(decodeURI(str).indexOf('.')).split('.')
@@ -11,8 +13,6 @@ export const PriceList = ({ filterAllPrice, setCountSum, isIdBasket, setIsIdBask
         setCountSum(prev => prev + +price)
         setIsIdBasket(prev => [...prev, id])
     }
-    console.log('isActive', isIdBasket)
-
 
     return (
         <div className={styles.price}>
@@ -29,7 +29,7 @@ export const PriceList = ({ filterAllPrice, setCountSum, isIdBasket, setIsIdBask
                                 <button className={styles.price__right_btn}
                                     onClick={(e) => {
                                         handleClick(String(x.id), x.price);
-                                    } }
+                                    }}
                                 >
                                     <Image src='/basket.svg' width={52} height={52} />
                                 </button>

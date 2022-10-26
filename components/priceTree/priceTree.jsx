@@ -15,7 +15,6 @@ export const PriceTree = ({ list, filterParentTree, setFilterParentTree, setFilt
         setFilterList(filterFunc())
     }, [list])
 
-    console.log('filterList', filterList)
     const filterFunc = () => {
         return list.filter((x) => x.parent == '');
     }
@@ -37,12 +36,9 @@ export const PriceTree = ({ list, filterParentTree, setFilterParentTree, setFilt
         }
 
     }
-    console.log('filter', filterParentTree)
-    console.log('list', list)
-
-
+    
     const handleClickChildren = (name) => {
-      return  setFilterChildrenTree(name)
+        return setFilterChildrenTree(name)
     }
 
     return (

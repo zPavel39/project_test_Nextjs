@@ -5,8 +5,10 @@ import styles from './dropdown.module.scss'
 
 
 export const Dropdown = ({ selected, setSelected }) => {
+
     const [isActive, setIsActive] = useState(false)
     const language = ['RU', 'ENG', 'MOL']
+
     return (
         <div className={styles.dropdown}>
             {isActive && (
